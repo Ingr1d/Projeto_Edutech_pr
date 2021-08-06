@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<h3>Digite um numero de 1-10 e veja se o numero sorteado é o mesmo que o seu!</h3>
+<input/>
+<button>Aperte o botão</button>
+<script>
+	var sorteado =Math.round(Math.random() * 10);
+	var input = document.querySelector("input");
+	input.focus();
+
+	function verifica(){
+
+		if(input.value == sorteado) {
+
+		alert("Parabéns, você acertou!");
+	}else{
+
+		alert("Que pena, você quer tentar de novo?");
+ }
+
+                input.value = "";
+                input.focus();
+
+    }
+var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+
+</script>
+

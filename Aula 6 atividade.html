@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+
+var numero = prompt("digite um numero!");
+var sorteado = parseInt(Math.random(numero) * 5);
+ for(var tentativas = 1; tentativas <= 5; tentativas++) {
+        var chute = parseInt(prompt("Tente adivinhar o número de 1 a " + numero));
+        if(chute == sorteado) {
+            alert("Parabéns, você acertou!");
+            conseguiu = true
+            break
+        } else {
+            if(chute > sorteado) {
+                alert("Ops, " + chute + " é maior que o número correto.");
+            }
+            if(chute < sorteado) {
+                alert("Ops, " + chute + " é menor que o número correto.");
+            }
+            conseguiu = false
+        }
+    }
+
+    if(conseguiu == true) {
+        mostra("Parabéns, você conseguiu!");
+    } else {
+        mostra("Ops, parece que não foi dessa vez, o número era " + sorteado);
+    }
+
+</script>
