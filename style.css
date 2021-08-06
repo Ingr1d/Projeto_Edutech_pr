@@ -1,0 +1,20 @@
+ 	head{
+ 		text-align: center
+ 	}
+ 	body{
+		background:#F5DEB3
+	}
+	#trabalho{
+		width: 100%;
+
+	}
+
+   p{
+			font-size: 20px;
+			text-align: center
+		}
+
+	h3{
+		color: darkred;
+		text-align: center
+	}
